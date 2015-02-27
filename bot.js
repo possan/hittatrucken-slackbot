@@ -175,6 +175,6 @@ currentlocations.then(function(data) {
 	});
 	Q.allSettled(all_pushes).then(function(data) {
 		console.log('all pushes done.', data);
-		process.exit(1);
+		process.exit(0);
 	});
 });
