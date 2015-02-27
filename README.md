@@ -34,3 +34,21 @@ Run the script just before lunchtime.
 node bot.js
 ```
 
+
+## Schedule it!
+
+Edit `bot.sh` and `bot.plist` to reflect the location where you installed the script and where your `node` lives, then to install it:
+
+```
+cp bot.plist ~/Library/LaunchAgents/truckbot.plist
+launchctl load ~/Library/LaunchAgents/truckbot.plist
+launchctl start se.possan.truckbot
+```
+
+To stop the job, just run
+
+```
+launchctl stop se.possan.truckbot
+launchctl unload ~/Library/LaunchAgents/truckbot.plist
+```
+
