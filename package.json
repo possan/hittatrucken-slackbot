@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "firebase": "^2.2.1",
+    "q": "^1.2.0",
+    "request": "^2.53.0"
+  }
+}
